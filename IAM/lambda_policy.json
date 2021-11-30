@@ -3,9 +3,9 @@
     "Statement": [
       {
         "Sid": "Stmt1638280547395",
-        "Action": "logs:*",
+        "Action": ["logs:*", "s3:GetObject"],
         "Effect": "Allow",
-        "Resource": "*"
+        "Resource": ["arn:aws:s3:::my-first-lambdabucket-194694014750/*"]
       }
     ]
   }
