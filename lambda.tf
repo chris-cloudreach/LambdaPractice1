@@ -4,6 +4,6 @@ resource "aws_lambda_function" "test_lambda" {
   function_name = "BotoScript"
   s3_bucket     = "my-first-lambdabucket-194694014750"
   role          = aws_iam_role.lambda_role.arn
-  handler       = "BotoScript.handler"
+  handler       = "BotoScript.handler" #pythonfilename.methodname
   runtime       = "python3.8"
 }
