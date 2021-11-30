@@ -1,7 +1,7 @@
 import json
 import boto3
 def handler(event, context):
-    s3_obj =boto3.client('s3',aws_access_key_id="AKIAS2VFK44PPNK7DOCE",aws_secret_access_key="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") #creating object for accessing s3
+    s3_obj =boto3.client('s3',aws_access_key_id="*********",aws_secret_access_key="*********") #creating object for accessing s3
 
     s3_pet_obj = s3_obj.get_object(Bucket='my-first-lambdabucket-194694014750', Key='PetDb.json')
     s3__pet_data = s3_pet_obj['Body'].read().decode('utf-8')
